@@ -1,0 +1,19 @@
+# Python
+venv/
+.venv/
+**/__pycache__/
+**/*.pyc
+
+# Node
+frontend/node_modules/
+
+# Build & outputs
+output/
+
+# OS & tooling
+.DS_Store
+.vercel/
+
+# Logs
+**/*.log
+.env

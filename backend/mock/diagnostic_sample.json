@@ -1,0 +1,36 @@
+{
+  "report_id": "mock_report_001",
+  "elements": [
+    {
+      "id": "container1",
+      "type": { "label": "Form" },
+      "topology": { "children": ["label_email", "input_email"] }
+    },
+    {
+      "id": "label_email",
+      "type": { "label": "Text" },
+      "content": { "text": "Email" },
+      "topology": { "parent_id": "container1" }
+    },
+    {
+      "id": "input_email",
+      "type": { "label": "Input" },
+      "content": { "text": "" },
+      "topology": { "parent_id": "container1" }
+    }
+  ],
+  "issues": [
+    {
+      "node_id": "label_email",
+      "type": "TEXT_MISMATCH",
+      "widget_role": "Text",
+      "expected": "邮箱",
+      "actual": "Email"
+    },
+    {
+      "node_id": "input_email",
+      "type": "MISSING_WIDGET",
+      "widget_role": "Button"
+    }
+  ]
+}
